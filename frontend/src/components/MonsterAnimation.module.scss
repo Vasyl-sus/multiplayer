@@ -1,0 +1,41 @@
+.Wrapper {
+  position: relative;
+
+  .JumpWrapper {
+    position: absolute;
+  }
+
+  .IdleWrapper {
+    position: absolute;
+    margin-left: 23px;
+    margin-top: 97px;
+  }
+
+  .EatWrapper {
+    position: absolute;
+    //margin-left: 27px;
+    //margin-top: 34px;
+  }
+
+  .ChewWrapper {
+    position: absolute;
+    //margin-left: 98px;
+    //margin-top: 116px;
+  }
+
+  .ChewToIdleWrapper {
+    position: absolute;
+    margin-top: 96px;
+    margin-left: 30px;
+  }
+
+  .DeathWrapper {
+    position: absolute;
+    margin-left: 40px;
+    margin-top: 139px;
+  }
+
+  .Hidden {
+    display: none;
+  }
+}

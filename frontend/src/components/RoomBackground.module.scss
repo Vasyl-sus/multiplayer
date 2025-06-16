@@ -1,0 +1,25 @@
+.Background {
+  position: absolute;
+  right: 0;
+  bottom: 100px;
+  width: 450px;
+  height: 650px;
+  background-repeat: repeat-x;
+  box-shadow: inset 0 0 16px 4px #fff;
+}
+
+.Background.Fluid {
+  animation-name: fluid;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes fluid {
+  from {
+    background-position: 0 top;
+  }
+  to {
+    background-position: 2200px top;
+  }
+}

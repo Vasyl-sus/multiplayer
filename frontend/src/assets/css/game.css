@@ -1,0 +1,262 @@
+.game-scaled {
+    position: relative;
+    width: 1195px;
+    height: 835px;
+    transform: scale(1);
+}
+
+.home-btn {
+    position: absolute;
+    top: 0;
+    left: 3%;
+    background-image: url("../images/texture_atlas.png");
+    background-repeat: no-repeat;
+    width: 68px;
+    height: 68px;
+    background-position: -1479px -1289px;
+    cursor: pointer;
+}
+
+.player-list {
+    width: 400px;
+}
+
+.player.green {
+    background-color: #8fd794;
+}
+
+.player.red {
+    background-color: #f0788a;
+}
+
+.word, .underline, .cross {
+    background-image: url("../images/texture_atlas.png");
+    background-repeat: no-repeat;
+}
+
+#puzzle {
+    display: flex;
+    align-items: baseline;
+}
+
+.puzzle-letter-wrapper {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    height: 70px;
+    margin-right: 15px;
+    width: 32px;
+}
+
+.puzzle-letter {
+    position: absolute;
+    text-align: center;
+    width: 32px;
+    bottom: 0;
+}
+
+.puzzle-letter > h1 {
+    line-height: 50px;
+}
+
+.underline {
+    background-position: -1434px -1652px;
+    height: 11px;
+}
+
+.main-area {
+    margin-top: 70px;
+    height: 350px;
+}
+
+#wordPad {
+    width: 600px;
+    transform: scale(0.7);
+    transform-origin: top left;
+}
+
+.word-wrapper {
+    display: inline-block;
+    position: relative;
+}
+
+.word-wrapper > .cross {
+    position: absolute;
+    top: 9px;
+    left: 14px;
+}
+
+.word {
+}
+
+.word.used {
+    opacity: 0.2;
+}
+
+.cross {
+    width: 69px;
+    height: 79px;
+    background-position: -512px -1597px;
+}
+
+.life-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: -150px;
+    margin-top: -75px;
+}
+
+.life-wrapper {
+    width: 120px;
+    height: 100px;
+}
+
+.life {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 120px;
+    height: 100px;
+    font-size: 60px;
+}
+
+@keyframes pulse {
+    0% {
+        /*width: 120px;
+        height: 100px;
+        font-size: 60px;*/
+        transform: scale(1);
+        transform-origin: center;
+    }
+    50% {
+        /*width: 80px;
+        height: 66px;
+        font-size: 40px;*/
+        transform: scale(0.8);
+        transform-origin: center;
+    }
+    100% {
+        /*width: 120px;
+        height: 100px;
+        font-size: 60px;*/
+        transform: scale(1);
+        transform-origin: center;
+    }
+}
+
+.life.alive {
+    background-image: url("../images/heart.png");
+}
+
+.life.dead {
+    background-image: url("../images/heart-dead.png");
+}
+
+.life .number {
+    color: white;
+    line-height: 30px;
+}
+
+.heart {
+    /*color: red;*/
+    /*font-size: 150px;*/
+    /*line-height: 75px;*/
+}
+
+.out-of-guess {
+    font-size: 45px;
+    text-align: center;
+}
+
+.status-bar {
+    width: 570px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.status-text {
+    font-size: 2.8rem;
+    line-height: 3.3rem;
+}
+
+#countdown {
+    position: relative;
+    height: 108px;
+    width: 108px;
+    text-align: center;
+}
+
+.countdown-back {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    border: solid black 2px;
+}
+
+svg circle {
+    stroke-dasharray: 293px;
+    stroke-dashoffset: 0;
+    stroke-linecap: round;
+    stroke-width: 4px;
+    stroke: #f0788a;
+    fill: transparent;
+    /*animation: countdown 10s linear infinite forwards;*/
+}
+
+@keyframes countdown {
+    from {
+        stroke-dashoffset: 0;
+    }
+    to {
+        stroke-dashoffset: 293px;
+    }
+}
+
+#countdown-number {
+    position: absolute;
+    font-size: 54px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    line-height: 90px;
+}
+
+svg {
+    position: absolute;
+    top: 0.12rem;
+    left: 0.125rem;
+    width: 108px;
+    height: 108px;
+    transform: rotateY(-180deg) rotateZ(-90deg);
+}
+
+.blink {
+    text-decoration: blink;
+    -webkit-animation-name: blinker;
+    -webkit-animation-duration: 0.4s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-direction: alternate;
+}
+
+@-webkit-keyframes blinker {
+    from {
+        opacity: 1.0;
+    }
+    to {
+        opacity: 0.0;
+    }
+}
+
+.end-header {
+    font-size: 3.5rem;
+}

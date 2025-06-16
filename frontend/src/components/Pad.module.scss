@@ -1,0 +1,30 @@
+.Pad {
+  width: 600px;
+  transform: scale(0.7);
+  transform-origin: top left;
+  margin-top: 40px;
+
+  .WordWrapper {
+    display: inline-block;
+    position: relative;
+
+    .Word, .Cross {
+      background-image: url("../assets/images/texture_atlas.png");
+      background-repeat: no-repeat;
+      opacity: 1;
+    }
+
+    .Used {
+      opacity: 0.2;
+    }
+
+    .Cross {
+      position: absolute;
+      top: 9px;
+      left: 14px;
+      width: 69px;
+      height: 79px;
+      background-position: -512px -1597px;
+    }
+  }
+}

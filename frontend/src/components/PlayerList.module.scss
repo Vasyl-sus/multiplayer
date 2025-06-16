@@ -1,0 +1,19 @@
+.PlayerList {
+  .PlayerListHeader {
+    font-size: 2rem;
+    background: black;
+    color: white;
+    text-align: center;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .PlayerListBody {
+    height: 805px;
+    overflow-y: auto;
+    background-color: #ededed;
+    position: relative;
+  }
+}

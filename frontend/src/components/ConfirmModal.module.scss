@@ -1,0 +1,51 @@
+@import "../assets/scss/variables";
+
+.ModalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(186, 189, 191, 0.5);
+}
+
+.ConfirmModal {
+  position: absolute;
+  background-color: white;
+  top: 20%;
+  left: 50%;
+  max-width: 310px;
+  width: calc(100% - 20px);
+  transform: translateX(-50%);
+  padding: 30px 10px 20px 10px;
+  opacity: 1;
+  border: solid 3px black;
+  border-radius: 5px;
+
+  .Close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0;
+    height: 28px;
+    border-width: 0 0 3px 3px;
+    border-color: black;
+    border-style: solid;
+    cursor: pointer;
+
+    .CloseIcon {
+      line-height: 25px;
+      font-size: 30px;
+    }
+  }
+}
+
+.Content {
+  padding: 0 10px;
+  text-align: center;
+  font-size: $font1;
+}
+
+.Ml10 {
+  margin-left: 10px;
+}

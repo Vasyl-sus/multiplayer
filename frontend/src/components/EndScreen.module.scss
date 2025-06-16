@@ -1,0 +1,41 @@
+@import "../assets/scss/variables";
+
+.Wrapper {
+  position: absolute;
+  width: 70%;
+  height: 550px;
+  left: 30%;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  background: white;
+
+  .Winner {
+    margin-top: 200px;
+    text-align: center;
+
+    .WinnerImageWrapper {
+      padding: 10px;
+      border: 2px solid black;
+      display: inline-block;
+
+      .WinnerImage {
+
+      }
+    }
+
+    .WinnerText {
+      margin-top: 20px;
+      font-size: $font1;
+    }
+  }
+
+  .Footer {
+    font-size: $font2;
+    text-align: center;
+  }
+}
+
+.Visible {
+  display: flex;
+}

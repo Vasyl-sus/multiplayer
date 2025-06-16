@@ -1,0 +1,75 @@
+.Wrapper {
+  position: relative;
+  margin-top: 270px;
+
+  .WalkWrapper {
+    position: absolute;
+    margin-left: -19px;
+    margin-top: -10px;
+  }
+
+  .WalkNoBalloonsWrapper {
+    position: absolute;
+    margin-left: 92px;
+    margin-top: 126px;
+  }
+
+  .JumpWrapper {
+    position: absolute;
+    margin-left: -19px;
+    margin-top: -273px;
+  }
+
+  .IdleWrapper {
+    position: absolute;
+    animation: floating 2s infinite;
+    //margin-left: 92px;
+    //margin-top: -94px;
+  }
+
+  @keyframes floating {
+    0% {
+      margin-top: 0;
+    }
+    50% {
+      margin-top: 10px;
+    }
+    100% {
+      margin-top: 0;
+    }
+  }
+
+  .OtherIdleWrapper {
+    position: absolute;
+    //margin-left: 90px;
+    //margin-top: -94px;
+  }
+
+  .BurstWrapper {
+    position: absolute;
+    //margin-left: 66px;
+    //margin-top: -100px;
+  }
+
+  .LoseWrapper {
+    position: absolute;
+    margin-top: -284px;
+    margin-left: 71px;
+  }
+
+  .CorrectWrapper {
+    position: absolute;
+    margin-top: -94px;
+    margin-left: 92px;
+  }
+
+  .WinWrapper {
+    position: absolute;
+    margin-left: -4px;
+    margin-top: -98px;
+  }
+
+  .Hidden {
+    display: none;
+  }
+}

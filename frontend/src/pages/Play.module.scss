@@ -1,0 +1,103 @@
+@import "../assets/scss/variables";
+
+.ScaleWrapper {
+  position: relative;
+  width: 1455px;
+  height: 875px;
+  transform: scale(1);
+
+  display: grid;
+  grid-template-columns: 28.5% 1fr;
+
+  .MainContent {
+    position: relative;
+    margin-left: 20px;
+
+    .ToolBar {
+      z-index: 2;
+
+      .HomeIcon {
+        position: absolute;
+        top: 10px;
+        cursor: pointer;
+      }
+
+      .CopyLink {
+        position: absolute;
+        padding: 0 10px;
+        border: 2px solid black;
+        font-size: 25px;
+        top: 10px;
+        right: 5px;
+
+        .Tooltip {
+          background-color: black;
+          color: #fff;
+          text-align: center;
+          border-radius: 6px;
+          padding: 2px 5px;
+          font-size: 25px;
+
+          /* Position the tooltip */
+          position: absolute;
+          z-index: 1;
+          right: 0;
+          top: 45px;
+        }
+      }
+    }
+
+    .Central {
+      position: relative;
+    }
+
+    &.FadeIn {
+      opacity: 0.2;
+      animation-name: fadein;
+      animation-duration: 2s;
+    }
+
+    @keyframes fadein {
+      from {
+        opacity: 1;
+      }
+      to {
+      opacity: 0.2;
+      }
+    }
+
+    &.FadeOut {
+      opacity: 1;
+      animation-name: fadeout;
+      animation-duration: 2s;
+    }
+
+    @keyframes fadeout {
+      0% {
+        opacity: 0.2;
+      }
+      20% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.DFlex {
+  display: flex;
+}
+
+.AlignCenter {
+  align-items: center;
+}
+
+.AlignBaseLine {
+  align-items: baseline;
+}
+
+.JustifyCenter {
+  justify-content: center;
+}

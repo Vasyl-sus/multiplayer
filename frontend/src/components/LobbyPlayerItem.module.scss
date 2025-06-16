@@ -1,0 +1,61 @@
+.PlayerItem {
+  width: calc(100% - 40px);
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  column-gap: 10px;
+  color: black;
+  padding: 5px 20px;
+  transition: top 1s;
+
+  .PlayerInfo {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+
+    .PlayerName {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+
+  .PlayerAvatar {
+    position: relative;
+    height: 80px;
+    width: 80px;
+  }
+
+  .PencilIconWrapper {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    .PencilIcon {
+      width: 40px;
+    }
+  }
+}
+
+.PlayerItem:nth-child(even) {
+  background: #e1e1e1;
+}
+
+.PlayerItem:nth-child(odd) {
+  background: #ededed;
+}
+
+.DFlex {
+  display: flex;
+}
+
+.AlignCenter {
+  align-items: center;
+}
+
+.AlignBaseLine {
+  align-items: baseline;
+}
+
+.JustifyCenter {
+  justify-content: center;
+}

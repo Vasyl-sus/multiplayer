@@ -1,0 +1,19 @@
+.scaled {
+    width: 870px;
+    height: 845px;
+    transform: scale(1);
+}
+
+.logo, .btn, .play-btn {
+    background-image: url("../images/texture_atlas.png");
+    background-repeat: no-repeat;
+}
+
+.walk {
+    background-image: url("../images/animations_9.png");
+    background-repeat: no-repeat;
+}
+
+.name-wrapper {
+
+}

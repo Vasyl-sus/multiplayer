@@ -1,0 +1,89 @@
+@import "../assets/scss/variables";
+
+.Header {
+  position: relative;
+  height: 60px;
+  padding-top: 36px;
+
+  .Logo {
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.Content {
+  position: relative;
+  height: 600px;
+
+  .MonsterWrapper {
+    position: absolute;
+    top: 0;
+    height: 100%;
+
+    .IdleWrapper {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+  }
+
+  .HeroWrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+
+    .WalkWrapper {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+  }
+
+  .ButtonWrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    z-index: 1;
+
+    .Button {
+      text-transform: uppercase;
+      width: 300px;
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: black 5px solid;
+      font-size: $font3;
+      cursor: pointer;
+      background: white;
+    }
+  }
+}
+
+.Footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  .AudioButton {
+    display: inline;
+  }
+}
+
+.Icon {
+  cursor: pointer;
+  display: inline;
+}
+
+.Mt15 {
+  margin-top: 15px;
+}
+
+.Ml20 {
+  margin-left: 20px;
+}

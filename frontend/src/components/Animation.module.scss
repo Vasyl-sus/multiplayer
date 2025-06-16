@@ -1,0 +1,9 @@
+.MonsterWrapper {
+  position: relative;
+  z-index: 1;
+
+  .MonsterStart {
+    position: absolute;
+    background-repeat: no-repeat;
+  }
+}

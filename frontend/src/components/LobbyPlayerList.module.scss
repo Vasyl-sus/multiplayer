@@ -1,0 +1,16 @@
+.PlayerList {
+  .PlayerListHeader {
+    font-size: 2rem;
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+  }
+
+  .PlayerListBody {
+    height: 805px;
+    overflow-y: auto;
+    background-color: #ededed;
+    position: relative;
+  }
+}

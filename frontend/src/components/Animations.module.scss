@@ -1,0 +1,22 @@
+.Wrapper {
+  .Monster {
+    position: absolute;
+    left: 500px;
+    top: 290px;
+    z-index: 2;
+  }
+
+  .Balloons {
+    position: absolute;
+    left: 617px;
+    top: -40px;
+    z-index: 1;
+  }
+
+  .Hero {
+    position: absolute;
+    left: 600px;
+    top: 25px;
+    z-index: 1;
+  }
+}

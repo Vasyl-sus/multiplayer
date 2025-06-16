@@ -1,0 +1,161 @@
+@import "../assets/scss/variables";
+
+.ScaleWrapper {
+  position: relative;
+  width: 1455px;
+  height: 875px;
+  transform: scale(1);
+
+  display: grid;
+  grid-template-columns: 28.5% 1fr;
+
+  .MainContent {
+    position: relative;
+    text-align: center;
+
+    .Toolbar {
+      .HomeIcon {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        cursor: pointer;
+      }
+    }
+
+    .HostArea {
+      display: inline-flex;
+      padding: 15px;
+      border: 3px black solid;
+      text-transform: uppercase;
+      align-items: center;
+      margin-top: 100px;
+
+      .HostLabel {
+        font-size: $font4;
+      }
+
+      .Host {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-column-gap: 10px;
+        margin-left: 40px;
+
+        .HostAvatar {
+          position: relative;
+          width: 80px;
+          margin-top: -18px;
+        }
+
+        .HostName {
+          margin-left: 10px;
+          font-size: $font1;
+        }
+      }
+    }
+
+    .RoomInfo {
+      text-align: center;
+
+      .RoomID {
+        margin-top: 20px;
+        font-size: $font3;
+        text-transform: uppercase;
+      }
+
+      .RoomUrl {
+        display: inline-block;
+        font-size: $font4;
+        background-color: #f3f3f3;
+        padding: 0 10px;
+        margin-top: 15px;
+      }
+
+      .Copy {
+        position: relative;
+        display: inline-block;
+        border: 3px solid black;
+        padding: 0 5px;
+        font-size: $font5;
+        margin-top: 30px;
+        cursor: pointer;
+
+        .Tooltip {
+          background-color: black;
+          color: #fff;
+          text-align: center;
+          border-radius: 6px;
+          padding: 2px 5px;
+          font-size: $font4;
+
+          /* Position the tooltip */
+          position: absolute;
+          z-index: 1;
+          top: 7px;
+          left: 110%;
+        }
+      }
+
+      .RoomRound {
+        display: inline-flex;
+        margin-top: 30px;
+
+        .RoundLabel {
+          font-size: $font5;
+        }
+
+        .RoundControl {
+          display: flex;
+          align-items: center;
+          margin-left: 20px;
+          margin-top: 10px;
+
+          .Round {
+            font-size: $font4;
+            margin: 0 10px;
+            background-color: #f3f3f3;
+            padding: 0 10px;
+          }
+
+          .Arrow {
+            width: 40px;
+            height: 40px;
+          }
+
+          .ArrowRight {
+            transform: rotate(180deg);
+          }
+
+          .Arrow.Enable {
+            cursor: pointer;
+          }
+
+          .Arrow.Disable {
+            opacity: 0.5;
+            cursor: default;
+          }
+        }
+      }
+    }
+
+    .PlayButton {
+      background-color: black;
+      color: white;
+      width: 300px;
+      font-size: $font3;
+      text-transform: uppercase;
+      text-align: center;
+      border-radius: 3px;
+      margin: 50px  auto 0 auto;
+      cursor: pointer;
+      padding: 10px 0;
+    }
+
+    .Waiting {
+      color: black;
+      font-size: $font5;
+      text-transform: uppercase;
+      text-align: center;
+      margin: 50px  auto 0 auto;
+    }
+  }
+}

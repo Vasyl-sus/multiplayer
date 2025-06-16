@@ -1,0 +1,32 @@
+@import "../assets/scss/variables";
+
+.Wrapper {
+  height: 153px;
+
+  .Hint {
+    text-align: center;
+    font-size: $font3;
+  }
+
+  .Puzzle {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+
+    .PuzzleLetterWrapper {
+      position: relative;
+      display: flex;
+      align-items: flex-end;
+      height: 70px;
+      margin-right: 15px;
+      width: 32px;
+
+      .PuzzleLetter {
+        position: absolute;
+        text-align: center;
+        width: 32px;
+        bottom: 0;
+      }
+    }
+  }
+}

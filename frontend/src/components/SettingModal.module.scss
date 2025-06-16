@@ -1,0 +1,93 @@
+.ModalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(186, 189, 191, 0.5);
+}
+
+.SettingModal {
+  position: absolute;
+  background-color: white;
+  top: 20%;
+  left: 50%;
+  max-width: 310px;
+  width: calc(100% - 20px);
+  transform: translateX(-50%);
+  padding: 30px 10px 20px 10px;
+  opacity: 1;
+  border: solid 3px black;
+  border-radius: 5px;
+
+  .Close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0;
+    height: 28px;
+    border-width: 0 0 3px 3px;
+    border-color: black;
+    border-style: solid;
+    cursor: pointer;
+
+    .CloseIcon {
+      line-height: 25px;
+      font-size: 30px;
+    }
+  }
+}
+
+.Content {
+  margin-top: 30px;
+  padding: 0 10px;
+
+  .ReplayIcon {
+    border-radius: 3px;
+    height: 45px;
+  }
+
+  .Name {
+    width: 250px;
+    padding: 5px 0 3px 0;
+    text-align: center;
+    font-size: 25px;
+    text-transform: uppercase;
+    border: solid black 3px;
+  }
+
+  .AvatarPicker {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+
+    .AvatarArea {
+      display: flex;
+      align-items: center;
+
+      .Avatar {
+        width: 45px;
+      }
+
+      .AvatarSmall {
+        width: 35px;
+        opacity: 0.5;
+      }
+    }
+
+    .Arrow {
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+    }
+
+    .ArrowRight {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.Ml10 {
+  margin-left: 10px;
+}

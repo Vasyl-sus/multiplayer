@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'Photograph';
+    src: url("../fonts/PHOTOGRAPHS.svg");
+    src: url('../fonts/PHOTOGRAPHS.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/PHOTOGRAPHS.woff') format('woff'),
+    url('../fonts/PHOTOGRAPHS.TTF') format('truetype'),
+    url('../fonts/PHOTOGRAPHS.svg#ralewaybold') format('svg');
+}

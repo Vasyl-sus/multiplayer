@@ -1,0 +1,36 @@
+.Wrapper {
+  position: relative;
+
+  .IdleWrapper {
+    position: absolute;
+    animation: floating 2s infinite;
+  }
+
+  @keyframes floating {
+    0% {
+      margin-top: 0;
+    }
+    50% {
+      margin-top: 10px;
+    }
+    100% {
+      margin-top: 0;
+    }
+  }
+
+  .BurstWrapper {
+    position: absolute;
+    //margin-left: -22px;
+    //margin-top: 38px;
+  }
+
+  .FlyWrapper {
+    position: absolute;
+    margin-left: -31px;
+    margin-top: -144px;
+  }
+
+  .Hidden {
+    display: none;
+  }
+}

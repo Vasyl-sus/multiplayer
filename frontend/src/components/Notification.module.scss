@@ -1,0 +1,11 @@
+@import "../assets/scss/variables";
+
+.Notification {
+  position: absolute;
+  width: 100%;
+  bottom: 60px;
+  font-size: $font5;
+  text-align: center;
+  background: white;
+  color: black;
+}

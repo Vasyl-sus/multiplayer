@@ -1,0 +1,94 @@
+@import "../assets/scss/variables";
+
+.Wrapper {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 2px solid black;
+  padding: 30px 30px 20px 30px;
+  width: 370px;
+  height: 650px;
+  top: 150px;
+  margin-top: -2000px;
+  left: 30%;
+  background: white;
+  transition: margin-top 1s;
+  transition-timing-function: linear;
+  z-index: 181;
+
+  .Upper {
+    .Header {
+      font-size: $font1;
+      text-align: center;
+    }
+
+    .Body {
+      margin-top: 20px;
+
+      .Player:nth-child(even) {
+        background-color: white;
+      }
+
+      .Player:nth-child(odd) {
+        background-color: #f3f3f3;
+      }
+
+      .Player {
+        display: grid;
+        grid-template-columns: auto 1fr 65px 65px;
+        padding: 0 20px;
+
+        .Avatar {
+          display: flex;
+          align-items: center;
+          height: 65px;
+          position: relative;
+          margin-left: 20px;
+
+          .AvatarImage {
+            width: 35px;
+          }
+        }
+
+        .Name {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: $font1;
+          margin-left: 45px;
+        }
+
+        .RoundScore {
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          font-size: $font1;
+        }
+
+        .Status {
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+
+          .StatusImage {
+            width: 25px;
+          }
+        }
+      }
+    }
+  }
+
+  .Footer {
+    font-size: $font1;
+    text-align: center;
+  }
+}
+
+.Visible {
+  margin-top: 20px;
+}
+
+.Hidden {
+  margin-top: -2000px;
+}
